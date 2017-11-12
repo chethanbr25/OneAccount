@@ -1,4 +1,6 @@
-﻿namespace One_Account
+﻿//This code is edited by Mohan
+
+namespace One_Account
 {
     partial class frmPurchaseInvoice
     {
@@ -16,6 +18,7 @@
             if (disposing && (components != null))
             {
                 components.Dispose();
+                // Req from Mohan
             }
             base.Dispose(disposing);
         }
