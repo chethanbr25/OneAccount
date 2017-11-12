@@ -94,7 +94,7 @@
     <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="itextsharp, Version=4.1.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\itextsharp.dll</HintPath>
+      <HintPath>..\..\..\One Account\One Account\bin\Debug\itextsharp.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -415,7 +415,6 @@
     </Compile>
     <Compile Include="CrystalReports\DataSet\dsDayBookReportCondensed.cs">
       <DependentUpon>dsDayBookReportCondensed.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="CrystalReports\DataSet\dsDayBookReportCondensed.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -520,7 +519,6 @@
     </Compile>
     <Compile Include="CrystalReports\DataSet\dsVatreturnReport.cs">
       <DependentUpon>dsVatreturnReport.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="CrystalReports\DataSet\dsVatreturnReport.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -569,7 +567,6 @@
     </Compile>
     <Compile Include="CrystalReports\DataSet\dsCashBankBook.cs">
       <DependentUpon>dsCashBankBook.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="CrystalReports\DataSet\dsCashBankBook.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -738,7 +735,6 @@
     </Compile>
     <Compile Include="CrystalReports\DataSet\dsSalesInvoice.cs">
       <DependentUpon>dsSalesInvoice.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="CrystalReports\DataSet\dsSalesInvoice.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -785,7 +781,6 @@
     </Compile>
     <Compile Include="CrystalReports\DataSet\DSTrailBalance.cs">
       <DependentUpon>DSTrailBalance.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="CrystalReports\DataSet\DSTrailBalance.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -1166,7 +1161,6 @@
     </Compile>
     <Compile Include="CrystalReports\DataSet\dsDailySalaryReport.cs">
       <DependentUpon>dsDailySalaryReport.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="CrystalReports\DataSet\dsDailySalaryReport.Designer.cs">
       <AutoGen>True</AutoGen>
