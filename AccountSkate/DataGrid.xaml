@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="AccountSkate.DataGrid"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" d:DesignHeight="338" d:DesignWidth="612">
+    <Grid>
+        <DataGrid AutoGenerateColumns="True" Name="dgDatas" Margin="0,81,0,12" LoadingRow="dgDatas_LoadingRow" CanUserAddRows="False" KeyDown="dgDatas_KeyDown" AutoGeneratingColumn="dgDatas_AutoGeneratingColumn"  HorizontalScrollBarVisibility="Auto"
+                VerticalScrollBarVisibility="Auto" EnableRowVirtualization="True" ScrollViewer.IsDeferredScrollingEnabled="True"/>
+        <TextBlock Margin="12,82,12,12" Name="txtNoRecords" Text="No Records Found" Foreground="#FF9D1616" FontSize="14" FontWeight="Medium" Visibility="Hidden" TextAlignment="Center" VerticalAlignment="Center" />
+        <Grid Name="lblBorder" Height="76" HorizontalAlignment="Right" Margin="0,0,58,13" VerticalAlignment="Bottom" Width="277" Background="#FF9A0404">
+            <Grid.Style>
+                <Style TargetType="Grid">
+                    <Style.Triggers>
+                        <Trigger Property="IsVisible" Value="true">
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard TargetProperty="Opacity">
+                                        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.7" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Grid.Style>
+            <Label BorderBrush="{x:Null}" BorderThickness="0" FontWeight="Medium" Foreground="White" Height="26" Name="lblEventMessage" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="7,28,7,22">
+            </Label>
+            <Button Content="x" Height="20" HorizontalAlignment="Right" Margin="0,-1,0,0" Name="button1" VerticalAlignment="Top" Width="20" BorderBrush="{x:Null}" BorderThickness="0" Foreground="White" Click="button1_Click" Background="{x:Null}">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="bdr">
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" ContentSource="Content" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="bdr" Property="Background" Value="Black"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="bdr" Property="Background" Value="Gray"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </Grid>
+    </Grid>
+</UserControl>

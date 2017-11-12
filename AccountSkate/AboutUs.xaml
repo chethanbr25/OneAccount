@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="AccountSkate.AboutUs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="486" d:DesignWidth="944">
+    <Grid>
+        <Grid Margin="0,2,0,0">
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="359,163,0,0" Name="textBlock3" Text="Account Skate" VerticalAlignment="Top" Width="143" FontSize="18" FontFamily="Or" Foreground="White" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="359,192,0,0" Name="textBlock4" Text="Version :     3.0.0.0" VerticalAlignment="Top" Width="122" Foreground="#FFD4D4D4" />
+            <TextBlock Foreground="#FFD4D4D4" Height="23" HorizontalAlignment="Left" Margin="359,213,0,0" Name="textBlock5" Text="copyright © 2014 OpenAccount" VerticalAlignment="Top" Width="242" />
+            <TextBlock Foreground="#FFD4D4D4" Height="23" HorizontalAlignment="Left" Margin="359,242,0,0" Name="textBlock6" Text="Feel free to contact us :   info@openAccount.com" VerticalAlignment="Top" Width="282" />
+            <TextBlock Foreground="#FFD4D4D4" Height="23" HorizontalAlignment="Left" Margin="359,267,0,0" Name="textBlock7" Text="Our Portals :   www.openAccount.com" VerticalAlignment="Top" Width="282" />
+            <TextBlock Foreground="#FFD4D4D4" Height="23" HorizontalAlignment="Left" Margin="435,288,0,0" Name="textBlock8" Text="www.cybrosys.com" VerticalAlignment="Top" Width="111" />
+            <TextBlock Foreground="#FFD4D4D4" Height="20" HorizontalAlignment="Left" Margin="656,343,0,0" Name="textBlock9" Text="OpenAccount" VerticalAlignment="Top" Width="282" FontWeight="Bold" FontSize="13" />
+            <TextBlock Foreground="#FFD4D4D4" Height="23" HorizontalAlignment="Left" Margin="656,369,0,0" Name="textBlock10" Text="Cybrosys Technologies Pvt. Ltd." VerticalAlignment="Top" Width="282" />
+            <TextBlock Foreground="#FFD4D4D4" Height="20" HorizontalAlignment="Left" Margin="656,392,0,0" Name="textBlock11" Text="Neospace, Kinfra Techno Park," VerticalAlignment="Top" Width="282" TextWrapping="Wrap" />
+            <TextBlock Foreground="#FFD4D4D4" Height="20" HorizontalAlignment="Left" Margin="656,410,0,0" Name="textBlock12" Text="Kakkancherry, Calicut University P.O., " TextWrapping="Wrap" VerticalAlignment="Top" Width="282" />
+            <TextBlock Foreground="#FFD4D4D4" Height="20" HorizontalAlignment="Left" Margin="656,428,0,0" Name="textBlock13" Text="Kerala, India - 673635" TextWrapping="Wrap" VerticalAlignment="Top" Width="282" />
+            <TextBlock Foreground="#FFD4D4D4" Height="20" HorizontalAlignment="Left" Margin="656,454,0,0" Name="textBlock14" Text="Phone: +91 (0) 4943015006" TextWrapping="Wrap" VerticalAlignment="Top" Width="282" />
+            <TextBlock Foreground="#FFD4D4D4" Height="23" HorizontalAlignment="Left" Margin="359,369,0,0" Name="textBlock15" Text="Level 1, Startup Village," VerticalAlignment="Top" Width="164" />
+            <TextBlock Foreground="#FFD4D4D4" Height="20" HorizontalAlignment="Left" Margin="359,392,0,0" Name="textBlock16" Text="Kinfra Hitech Park, " TextWrapping="Wrap" VerticalAlignment="Top" Width="164" />
+            <TextBlock Foreground="#FFD4D4D4" Height="20" HorizontalAlignment="Left" Margin="359,410,0,0" Name="textBlock17" Text="Kalamassery," TextWrapping="Wrap" VerticalAlignment="Top" Width="147" />
+            <TextBlock Foreground="#FFD4D4D4" Height="20" HorizontalAlignment="Left" Margin="359,428,0,0" Name="textBlock18" Text="Cochin. India - 683503" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" />
+            <TextBlock Foreground="#FFD4D4D4" Height="20" HorizontalAlignment="Left" Margin="359,454,0,0" Name="textBlock19" Text="info@openAccount.com" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" />
+            <Button Background="#FFDE2222" Content="x" FontFamily="MS Reference Sans Serif" Foreground="White" Height="23" HorizontalAlignment="Right" Margin="0,19,17,0" Name="button1" ToolTip="Close" VerticalAlignment="Top" Width="29" Click="button1_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="#FFB73D3D" Name="bdr">
+                            <ContentPresenter ContentSource="Content" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="UIElement.IsMouseOver" Value="True">
+                                <Setter Property="Border.Background" TargetName="bdr" Value="#FFE84A4A" />
+                            </Trigger>
+                            <Trigger Property="ButtonBase.IsPressed" Value="True">
+                                <Setter Property="Border.Background" TargetName="bdr" Value="#FFAAAAAA" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <TextBlock FontSize="13" FontWeight="Bold" Foreground="#FFD4D4D4" Height="20" HorizontalAlignment="Left" Margin="359,343,0,0" Name="textBlock1" Text="OpenAccount" VerticalAlignment="Top" Width="282" />
+        </Grid>
+    </Grid>
+    <UserControl.Background>
+        <RadialGradientBrush>
+            <GradientStop Color="#FF505050" Offset="0" />
+            <GradientStop Color="#FF202020" Offset="1" />
+        </RadialGradientBrush>
+    </UserControl.Background>
+</UserControl>

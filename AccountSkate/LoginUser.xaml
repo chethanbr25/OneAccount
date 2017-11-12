@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="AccountSkate.LoginUser"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Height="150" Width="321" Background="#41000000" BorderBrush="#FF909090" BorderThickness="1" Loaded="UserControl_Loaded">
+    <Grid Background="{x:Null}" Height="149">
+        <TextBox Background="#FFEBEBEB" BorderBrush="#FF5A5A5A" FontSize="11" FontWeight="Bold" Height="23" IsTabStop="False" Margin="35,44,35,0" Name="txtUserName" VerticalAlignment="Top" Padding="3" KeyUp="txtPassword_KeyUp" TextChanged="txtUserName_TextChanged" TabIndex="0" />
+        <Button Background="#FF202020" BorderBrush="{x:Null}" Content="Login" Foreground="#FFF5CA84" Height="30" HorizontalAlignment="Right" Margin="0,105,128,0" Name="btnLogin" TabIndex="3" VerticalAlignment="Top" Width="80" Click="btnLogin_Click" />
+        <Button Background="#FF202020" BorderBrush="{x:Null}" Content="Cancel" Foreground="#FFF5CA84" Height="30" HorizontalAlignment="Right" Margin="0,104,34,0" Name="btnCancel" TabIndex="4" VerticalAlignment="Top" Width="80" Click="btnCancel_Click" />
+        <PasswordBox Background="#FFEBEBEB" BorderBrush="#FF5A5A5A" Height="23" Margin="35,76,35,0" Name="txtPassword" TabIndex="2" VerticalAlignment="Top" FontSize="11" Padding="3" KeyUp="txtPassword_KeyUp" PasswordChanged="txtPassword_PasswordChanged" />
+        <Label Content="Sorry login faild." FontSize="12" FontWeight="Bold" Foreground="Red" Height="26" Margin="185,0,0,99" Name="lblErrorLogin" VerticalAlignment="Bottom" Visibility="Hidden" HorizontalContentAlignment="Left" Background="{x:Null}" Padding="3" HorizontalAlignment="Left" Width="100" />
+        <Label Content="Administrator Login" Height="28" Name="label1" VerticalAlignment="Top" Margin="0,9,154,0" Foreground="#FFCECECE" FontFamily="Arial" FontSize="14" HorizontalAlignment="Right" Width="131" BorderBrush="#FFFF7C7C" BorderThickness="0,0,0,1" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="42,48,0,0" Name="textBlock1" Text="User Name" VerticalAlignment="Top" Cursor="IBeam" MouseEnter="textBlock1_MouseEnter" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="42,79,0,0" Name="textBlock2" Text="Password" VerticalAlignment="Top" Cursor="IBeam" MouseEnter="textBlock2_MouseEnter" />
+    </Grid>
+</UserControl>

@@ -1,0 +1,128 @@
+﻿<Window x:Class="AccountSkate.Skate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Skate" Height="630" Width="1320" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" WindowStyle="None" xmlns:my="clr-namespace:AccountSkate" Background="Black" Icon="/AccountSkate;component/Images/Account-skate-icon.png">
+    <Window.Resources>
+        <!-- This style is used for buttons, to remove the WPF default 'animated' mouse over effect -->
+        <Style x:Key="MyButtonStyle" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Margin" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" 
+                            Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Margin" Value="1" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="gray" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+            
+        <Grid Name="grdMain" Margin="65,0,0,0" MouseDown="grdMain_MouseDown">
+            <Grid.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF505050" Offset="0" />
+                    <GradientStop Color="#FF202020" Offset="1" />
+                </RadialGradientBrush>
+            </Grid.Background>
+            <ProgressBar Height="10" Name="pbProgressBar" VerticalAlignment="Bottom" BorderThickness="0" Foreground="#FFFF2210" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0,0,0,1" />
+            <my:MainMenu Height="74" Margin="33,8,59,0" x:Name="mainmaenu" VerticalAlignment="Top" Visibility="Hidden" />
+            <Button Content="x" Height="23" HorizontalAlignment="Right" Margin="0,17,16,0" Name="button1" VerticalAlignment="Top" Width="29" FontFamily="MS Reference Sans Serif" Background="#67030303" Foreground="White" ToolTip="Close" Click="button1_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="bdr">
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" ContentSource="Content" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="bdr" Property="Background" Value="#FFE84A4A"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="bdr" Property="Background" Value="#FFAAAAAA"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button Content="_" Height="23" HorizontalAlignment="Right" Margin="0,44,16,0" Name="button2" VerticalAlignment="Top" Width="29" FontFamily="Sitka Subheading" BorderBrush="{x:Null}" Background="#67030303" Foreground="White" ToolTip="Minimize" Click="button2_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="bdr">
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" ContentSource="Content" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="bdr" Property="Background" Value="#FF4AABE8"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="bdr" Property="Background" Value="#FFAAAAAA"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Label Content="www.openAccount.com" Height="28" Margin="0,0,5,-8" Name="label1" VerticalAlignment="Bottom" Foreground="Gray" HorizontalAlignment="Right" Width="130" />
+        </Grid>
+        <Grid Name="grdLeftMenu" Width="64" HorizontalAlignment="Left">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="79" />
+                <RowDefinition Height="365*" />
+                <RowDefinition Height="134" />
+            </Grid.RowDefinitions>
+            <Button Height="60" Style="{StaticResource MyButtonStyle}" Name="btnExcellFormat" VerticalAlignment="Top" Width="60" Grid.Row="1" HorizontalAlignment="Center" Click="btnProcess_Click" Margin="2,61,2,0" ToolTip="Generate Excel Format" FontFamily="Arial" FontSize="12" FontWeight="SemiBold" FontStretch="Normal">
+                <Button.Background>
+                    <ImageBrush ImageSource="/AccountSkate;component/Images/excel_generate.png" />
+                </Button.Background>
+            </Button>
+        <Button Style="{StaticResource MyButtonStyle}" Height="60" Name="btnExportExcel" VerticalAlignment="Top" Width="60" Grid.Row="1" HorizontalAlignment="Center" Click="btnProcess_Click" Margin="2,125,2,0" ToolTip="Export to Excel" FontFamily="Arial" FontSize="12" FontWeight="SemiBold" FontStretch="Normal">
+                <Button.Background>
+                    <ImageBrush ImageSource="/AccountSkate;component/Images/import_excel.png" />
+                </Button.Background>
+            </Button>
+        <Button Style="{StaticResource MyButtonStyle}" Height="60" Name="btnImportFromTally" VerticalAlignment="Top" Width="60" ToolTip="Import from Tally" HorizontalAlignment="Center" Click="btnProcess_Click" Margin="2,5,2,0" Grid.Row="1" FontFamily="Arial" FontSize="12" FontWeight="SemiBold" FontStretch="Normal">
+                <Button.Background>
+                    <ImageBrush ImageSource="/AccountSkate;component/Images/tally.png" Stretch="Fill" TileMode="None" />
+                </Button.Background>
+            </Button>
+        <Button Style="{StaticResource MyButtonStyle}" Height="60" Name="btnContactUs" VerticalAlignment="Top" Width="60" Grid.Row="1" HorizontalAlignment="Center" Click="btnProcess_Click" Margin="2,248,2,0" ToolTip="Contact Us" FontFamily="Arial" FontSize="12" FontWeight="SemiBold" FontStretch="Normal">
+                <Button.Background>
+                    <ImageBrush ImageSource="/AccountSkate;component/Images/contact_us.png" />
+                </Button.Background>
+            </Button>
+        <Button Style="{StaticResource MyButtonStyle}" Height="60" Name="button8" VerticalAlignment="Bottom" Width="60" Margin="3,0,0,13" Grid.Row="2" HorizontalAlignment="Center" Click="button8_Click" ToolTip="Logout">
+                <Button.Background>
+                    <ImageBrush ImageSource="/AccountSkate;component/Images/logout.png" />
+                </Button.Background>
+            </Button>
+            
+        <Button Style="{StaticResource MyButtonStyle}" Height="60" Name="btnImportFromExcel" VerticalAlignment="Top" Width="60" Grid.Row="1" ToolTip="Import from Excel" HorizontalAlignment="Center" Click="btnProcess_Click" Margin="2,191,2,0" FontFamily="Arial" FontSize="12" FontWeight="SemiBold" FontStretch="Normal">
+                <Button.Background>
+                    <ImageBrush ImageSource="/AccountSkate;component/Images/export_excel.png" />
+                </Button.Background>
+            </Button>
+        <Button Style="{StaticResource MyButtonStyle}" Height="60" Margin="3,0,0,69" Name="button3" VerticalAlignment="Bottom" Width="60" Click="button3_Click" Grid.Row="2" HorizontalAlignment="Center" ToolTip="Skate">
+                <Button.Background>
+                    <ImageBrush ImageSource="/AccountSkate;component/Images/skate.png" />
+                </Button.Background>
+            </Button>
+        <Button Style="{StaticResource MyButtonStyle}" Height="60" Name="btnAboutUs" VerticalAlignment="Top" Width="60" Grid.Row="1" HorizontalAlignment="Center" Click="btnProcess_Click" Margin="2,311,2,0" ToolTip="About Us" FontFamily="Arial" FontSize="12" FontWeight="SemiBold" FontStretch="Normal">
+                <Button.Background>
+                    <ImageBrush ImageSource="/AccountSkate;component/Images/about_us.png" />
+                </Button.Background>
+            </Button>
+            <Image Height="45" Name="image1" Stretch="Fill" Width="45" Source="/AccountSkate;component/Images/Account-skate-icon.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,10,0,0" />
+        </Grid>
+    </Grid>
+</Window>

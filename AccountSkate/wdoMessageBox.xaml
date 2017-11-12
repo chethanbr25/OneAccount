@@ -1,0 +1,19 @@
+﻿<Window x:Class="AccountSkate.wdoMessageBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" WindowStyle="None" WindowStartupLocation="CenterScreen" ShowInTaskbar="False" ResizeMode="NoResize" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" MaxWidth="480" FontWeight="Normal" FontSize="12" FontStretch="Normal" Background="#FF1A1818" d:DesignHeight="246" d:DesignWidth="431" SizeToContent="WidthAndHeight" Foreground="{x:Null}" AllowsTransparency="True">
+    <Grid>
+        <Label Background="#FFB43A3A" BorderBrush="#FFD1D1D1" FontFamily="Arial" FontSize="12" FontWeight="Bold" Foreground="#FFF8F2D2" Height="28" HorizontalContentAlignment="Center" Margin="0,0,0,179" Name="lblCaption" Padding="0" VerticalAlignment="Bottom" VerticalContentAlignment="Center" Content="Information" BorderThickness="0,0,0,1" />
+        <Button Background="#FF202020" BorderBrush="#FFF5CA84" Content="OK" FontSize="11" FontWeight="Bold" Foreground="#FFF5CA84" Height="25" Margin="150,0,140,12" Name="btnOk" Click="btnOk_Click" TabIndex="1" Width="119" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Style.Triggers>
+                        <Trigger Property="UIElement.IsEnabled" Value="False">
+                            <Setter Property="UIElement.Opacity" Value="0.5" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <TextBox Background="{x:Null}" FontFamily="Arial" Foreground="#FFE8E8E8"  Margin="12,44,12,43" Name="txtMessage" Text="xvc" IsReadOnly="True" VerticalScrollBarVisibility="Auto" BorderBrush="{x:Null}" BorderThickness="0" HorizontalScrollBarVisibility="Auto" TextAlignment="Center" VerticalContentAlignment="Center" />
+    </Grid>
+</Window>

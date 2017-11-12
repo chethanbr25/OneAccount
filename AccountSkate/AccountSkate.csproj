@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9850BD20-BB46-4C94-8EA2-7D98105974DC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AccountSkate</RootNamespace>
+    <AssemblyName>AccountSkate</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AboutUs.xaml.cs">
+      <DependentUpon>AboutUs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Clasess\General\CommonSource.cs" />
+    <Compile Include="Clasess\General\DBConnection.cs" />
+    <Compile Include="Clasess\General\DBSourceConnectionExcell.cs" />
+    <Compile Include="Clasess\General\DBSourceConnectionTally.cs" />
+    <Compile Include="Clasess\General\Propertiess.cs" />
+    <Compile Include="Clasess\Info\AccountGroupInfo.cs" />
+    <Compile Include="Clasess\Info\StockInfo.cs" />
+    <Compile Include="Clasess\OpenmiracleInfo\AccountGroupInfoforOpenmiracle.cs" />
+    <Compile Include="Clasess\OpenmiracleInfo\AccountLedgerInfoforOpenmiracle.cs" />
+    <Compile Include="Clasess\Info\BatchesInfo.cs" />
+    <Compile Include="Clasess\Info\CurrencyInfo.cs" />
+    <Compile Include="Clasess\Info\CustomerSupplierInfo.cs" />
+    <Compile Include="Clasess\Info\LedgerInfo.cs" />
+    <Compile Include="Clasess\Info\EmployeeInfo.cs" />
+    <Compile Include="Clasess\Info\GodownInfo.cs" />
+    <Compile Include="Clasess\Info\PricingLevelInfo.cs" />
+    <Compile Include="Clasess\Info\ProductGroupInfo.cs" />
+    <Compile Include="Clasess\Info\ProductInfo.cs" />
+    <Compile Include="Clasess\Info\UnitsInfo.cs" />
+    <Compile Include="Clasess\Info\VoucherTypesInfo.cs" />
+    <Compile Include="Clasess\OpenmiracleInfo\CurrencyInfoforOpenmiracle.cs" />
+    <Compile Include="Clasess\OpenmiracleInfo\GodowninfoforOpenmiracle.cs" />
+    <Compile Include="Clasess\OpenmiracleInfo\PriceLevelInfofroOpenmiracle.cs" />
+    <Compile Include="Clasess\OpenmiracleInfo\ProductGroupinfoforOpenmiracle.cs" />
+    <Compile Include="Clasess\OpenmiracleInfo\ProductInfofroOpenmiracle.cs" />
+    <Compile Include="Clasess\OpenmiracleInfo\StockforOpenmiracle.cs" />
+    <Compile Include="Clasess\OpenmiracleInfo\UnitinfoforOpenmiracle.cs" />
+    <Compile Include="Clasess\OpenmiracleInfo\VoucherTypeinfoforOpenmiracle.cs" />
+    <Compile Include="Clasess\Sp\Checkings.cs" />
+    <Compile Include="Clasess\Sp\GenerateExcell.cs" />
+    <Compile Include="Clasess\Sp\ExcellSp.cs" />
+    <Compile Include="Clasess\Sp\Openmiracle.cs" />
+    <Compile Include="Clasess\Sp\OpenmiracleExport.cs" />
+    <Compile Include="Clasess\Sp\Tally.cs" />
+    <Compile Include="Clasess\Sp\MasterValidations.cs" />
+    <Compile Include="ContactUs.xaml.cs">
+      <DependentUpon>ContactUs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataGrid.xaml.cs">
+      <DependentUpon>DataGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoginUser.xaml.cs">
+      <DependentUpon>LoginUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.xaml.cs">
+      <DependentUpon>MainMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Skate.xaml.cs">
+      <DependentUpon>Skate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wdoMessageBox.xaml.cs">
+      <DependentUpon>wdoMessageBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="AboutUs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ContactUs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Skate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wdoMessageBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\miracle-skate-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\account_group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\account_ledgers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\batches.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\currency.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\godowns.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pricing_level.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\product_groups.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\sales_man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\supplier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\units.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\voucher_type.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\about_us.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\contact_us.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\excel_generate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\export_excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\import_excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\skate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\tally.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\stock.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
