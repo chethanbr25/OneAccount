@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCompanyCreation));
             this.btnReset = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.txtAddress = new System.Windows.Forms.TextBox();
@@ -87,6 +86,8 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.label1 = new System.Windows.Forms.Label();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.txtGSTinNo = new System.Windows.Forms.TextBox();
+            this.lblGSTinNo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             this.gbxDetails.SuspendLayout();
             this.SuspendLayout();
@@ -97,7 +98,7 @@
             this.btnReset.FlatAppearance.BorderSize = 0;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.ForeColor = System.Drawing.Color.Black;
-            this.btnReset.Location = new System.Drawing.Point(502, 457);
+            this.btnReset.Location = new System.Drawing.Point(502, 506);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(85, 27);
             this.btnReset.TabIndex = 24;
@@ -112,7 +113,7 @@
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Location = new System.Drawing.Point(410, 457);
+            this.btnSave.Location = new System.Drawing.Point(410, 506);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(85, 27);
             this.btnSave.TabIndex = 23;
@@ -472,7 +473,7 @@
             this.gbxDetails.Controls.Add(this.lblAdminUserName);
             this.gbxDetails.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxDetails.ForeColor = System.Drawing.Color.Maroon;
-            this.gbxDetails.Location = new System.Drawing.Point(403, 285);
+            this.gbxDetails.Location = new System.Drawing.Point(403, 339);
             this.gbxDetails.Name = "gbxDetails";
             this.gbxDetails.Size = new System.Drawing.Size(361, 124);
             this.gbxDetails.TabIndex = 17;
@@ -604,7 +605,7 @@
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.ForeColor = System.Drawing.Color.Black;
-            this.btnClose.Location = new System.Drawing.Point(686, 457);
+            this.btnClose.Location = new System.Drawing.Point(686, 506);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(85, 27);
             this.btnClose.TabIndex = 26;
@@ -619,7 +620,7 @@
             this.cbxSetAsDefault.BackColor = System.Drawing.Color.Transparent;
             this.cbxSetAsDefault.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxSetAsDefault.ForeColor = System.Drawing.Color.MediumBlue;
-            this.cbxSetAsDefault.Location = new System.Drawing.Point(21, 469);
+            this.cbxSetAsDefault.Location = new System.Drawing.Point(21, 518);
             this.cbxSetAsDefault.Name = "cbxSetAsDefault";
             this.cbxSetAsDefault.Size = new System.Drawing.Size(138, 17);
             this.cbxSetAsDefault.TabIndex = 19;
@@ -718,7 +719,7 @@
             this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.ForeColor = System.Drawing.Color.Brown;
-            this.btnDelete.Location = new System.Drawing.Point(595, 457);
+            this.btnDelete.Location = new System.Drawing.Point(595, 506);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(85, 27);
             this.btnDelete.TabIndex = 25;
@@ -727,12 +728,34 @@
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             this.btnDelete.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnDelete_KeyDown);
             // 
+            // txtGSTinNo
+            // 
+            this.txtGSTinNo.Location = new System.Drawing.Point(124, 446);
+            this.txtGSTinNo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 0);
+            this.txtGSTinNo.MaxLength = 20;
+            this.txtGSTinNo.Name = "txtGSTinNo";
+            this.txtGSTinNo.Size = new System.Drawing.Size(234, 20);
+            this.txtGSTinNo.TabIndex = 121;
+            // 
+            // lblGSTinNo
+            // 
+            this.lblGSTinNo.AutoSize = true;
+            this.lblGSTinNo.ForeColor = System.Drawing.Color.Black;
+            this.lblGSTinNo.Location = new System.Drawing.Point(20, 450);
+            this.lblGSTinNo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 0);
+            this.lblGSTinNo.Name = "lblGSTinNo";
+            this.lblGSTinNo.Size = new System.Drawing.Size(60, 13);
+            this.lblGSTinNo.TabIndex = 122;
+            this.lblGSTinNo.Text = "GSTIN No.";
+            // 
             // frmCompanyCreation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(792, 500);
+            this.ClientSize = new System.Drawing.Size(809, 545);
+            this.Controls.Add(this.txtGSTinNo);
+            this.Controls.Add(this.lblGSTinNo);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtBooksBegining);
@@ -781,7 +804,6 @@
             this.Controls.Add(this.lblCompanyName);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "frmCompanyCreation";
@@ -859,5 +881,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox txtGSTinNo;
+        private System.Windows.Forms.Label lblGSTinNo;
     }
 }

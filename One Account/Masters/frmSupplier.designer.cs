@@ -31,7 +31,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSupplier));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblBranchCode = new System.Windows.Forms.Label();
             this.txtBranchCode = new System.Windows.Forms.TextBox();
@@ -194,7 +193,7 @@
             this.btnAreaAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnAreaAdd.FlatAppearance.BorderSize = 0;
             this.btnAreaAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAreaAdd.Font = new System.Drawing.Font("Bauhaus 93", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAreaAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAreaAdd.Location = new System.Drawing.Point(764, 197);
             this.btnAreaAdd.Margin = new System.Windows.Forms.Padding(5, 5, 5, 0);
             this.btnAreaAdd.Name = "btnAreaAdd";
@@ -210,7 +209,7 @@
             this.btnRouteAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnRouteAdd.FlatAppearance.BorderSize = 0;
             this.btnRouteAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRouteAdd.Font = new System.Drawing.Font("Bauhaus 93", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRouteAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRouteAdd.Location = new System.Drawing.Point(334, 226);
             this.btnRouteAdd.Margin = new System.Windows.Forms.Padding(5, 5, 5, 0);
             this.btnRouteAdd.Name = "btnRouteAdd";
@@ -621,9 +620,9 @@
             this.lblTin.Location = new System.Drawing.Point(14, 180);
             this.lblTin.Margin = new System.Windows.Forms.Padding(5, 5, 5, 0);
             this.lblTin.Name = "lblTin";
-            this.lblTin.Size = new System.Drawing.Size(25, 13);
+            this.lblTin.Size = new System.Drawing.Size(40, 13);
             this.lblTin.TabIndex = 251;
-            this.lblTin.Text = "TIN";
+            this.lblTin.Text = "GSTIN";
             // 
             // lblSupplierName
             // 
@@ -862,7 +861,6 @@
             this.Controls.Add(this.groupBox1);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "frmSupplier";

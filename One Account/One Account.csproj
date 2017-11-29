@@ -415,6 +415,7 @@
     </Compile>
     <Compile Include="CrystalReports\DataSet\dsDayBookReportCondensed.cs">
       <DependentUpon>dsDayBookReportCondensed.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="CrystalReports\DataSet\dsDayBookReportCondensed.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -519,6 +520,7 @@
     </Compile>
     <Compile Include="CrystalReports\DataSet\dsVatreturnReport.cs">
       <DependentUpon>dsVatreturnReport.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="CrystalReports\DataSet\dsVatreturnReport.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -567,6 +569,7 @@
     </Compile>
     <Compile Include="CrystalReports\DataSet\dsCashBankBook.cs">
       <DependentUpon>dsCashBankBook.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="CrystalReports\DataSet\dsCashBankBook.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -735,6 +738,7 @@
     </Compile>
     <Compile Include="CrystalReports\DataSet\dsSalesInvoice.cs">
       <DependentUpon>dsSalesInvoice.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="CrystalReports\DataSet\dsSalesInvoice.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -781,6 +785,7 @@
     </Compile>
     <Compile Include="CrystalReports\DataSet\DSTrailBalance.cs">
       <DependentUpon>DSTrailBalance.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="CrystalReports\DataSet\DSTrailBalance.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -1161,6 +1166,7 @@
     </Compile>
     <Compile Include="CrystalReports\DataSet\dsDailySalaryReport.cs">
       <DependentUpon>dsDailySalaryReport.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="CrystalReports\DataSet\dsDailySalaryReport.Designer.cs">
       <AutoGen>True</AutoGen>

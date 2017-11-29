@@ -117,17 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="SlNo.UserAddedColumn" type="System.Boolean, mscorlib">
+  <metadata name="SlNo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </data>
-  <data name="dgvtxtledgerId.UserAddedColumn" type="System.Boolean, mscorlib">
+  </metadata>
+  <metadata name="dgvtxtledgerId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </data>
-  <data name="dgvtxtCustomerName.UserAddedColumn" type="System.Boolean, mscorlib">
+  </metadata>
+  <metadata name="dgvtxtCustomerName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </data>
-  <data name="dgvtxtOpeningBalance.UserAddedColumn" type="System.Boolean, mscorlib">
+  </metadata>
+  <metadata name="dgvtxtOpeningBalance.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </data>
+  </metadata>
 </root>

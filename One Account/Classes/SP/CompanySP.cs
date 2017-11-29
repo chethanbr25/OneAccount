@@ -69,6 +69,8 @@ namespace One_Account
                 sprmparam.Value = companyinfo.BooksBeginingFrom;
                 sprmparam = sccmd.Parameters.Add("@tin", SqlDbType.VarChar);
                 sprmparam.Value = companyinfo.Tin;
+                sprmparam = sccmd.Parameters.Add("@gstin", SqlDbType.VarChar);
+                sprmparam.Value = companyinfo.GSTin;
                 sprmparam = sccmd.Parameters.Add("@cst", SqlDbType.VarChar);
                 sprmparam.Value = companyinfo.Cst;
                 sprmparam = sccmd.Parameters.Add("@pan", SqlDbType.VarChar);
@@ -139,6 +141,8 @@ namespace One_Account
                 sprmparam.Value = companyinfo.BooksBeginingFrom;
                 sprmparam = sccmd.Parameters.Add("@tin", SqlDbType.VarChar);
                 sprmparam.Value = companyinfo.Tin;
+                sprmparam = sccmd.Parameters.Add("@gstin", SqlDbType.VarChar);
+                sprmparam.Value = companyinfo.GSTin;
                 sprmparam = sccmd.Parameters.Add("@cst", SqlDbType.VarChar);
                 sprmparam.Value = companyinfo.Cst;
                 sprmparam = sccmd.Parameters.Add("@pan", SqlDbType.VarChar);
@@ -234,6 +238,7 @@ namespace One_Account
                     companyinfo.Extra1 = sdrreader[19].ToString();
                     companyinfo.Extra2 = sdrreader[20].ToString();
                     companyinfo.ExtraDate = DateTime.Parse(sdrreader[21].ToString());
+                    companyinfo.GSTin = sdrreader[22].ToString();
                 }
             }
             catch (Exception ex)
@@ -388,6 +393,8 @@ namespace One_Account
                 sprmparam.Value = companyinfo.BooksBeginingFrom;
                 sprmparam = sccmd.Parameters.Add("@tin", SqlDbType.VarChar);
                 sprmparam.Value = companyinfo.Tin;
+                sprmparam = sccmd.Parameters.Add("@gstin", SqlDbType.VarChar);
+                sprmparam.Value = companyinfo.GSTin;
                 sprmparam = sccmd.Parameters.Add("@cst", SqlDbType.VarChar);
                 sprmparam.Value = companyinfo.Cst;
                 sprmparam = sccmd.Parameters.Add("@pan", SqlDbType.VarChar);

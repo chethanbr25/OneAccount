@@ -35,7 +35,8 @@ class CompanyInfo
     private decimal _currencyId;    
     private DateTime _financialYearFrom;    
     private DateTime _booksBeginingFrom;    
-    private string _tin;    
+    private string _tin;
+    private string _gstin;
     private string _cst;    
     private string _pan;    
     private DateTime _currentDate;    
@@ -118,7 +119,12 @@ class CompanyInfo
     {    
         get { return _tin; }    
         set { _tin = value; }    
-    }    
+    }
+    public string GSTin
+    {
+        get { return _gstin; }
+        set { _gstin = value; }
+    }   
     public string Cst    
     {    
         get { return _cst; }    

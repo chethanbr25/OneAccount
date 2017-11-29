@@ -31,7 +31,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCustomer));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblCustomerNameValidator = new System.Windows.Forms.Label();
             this.txtBranchCode = new System.Windows.Forms.TextBox();
@@ -186,7 +185,7 @@
             this.btnRoutAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnRoutAdd.FlatAppearance.BorderSize = 0;
             this.btnRoutAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRoutAdd.Font = new System.Drawing.Font("Bauhaus 93", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRoutAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRoutAdd.ForeColor = System.Drawing.Color.White;
             this.btnRoutAdd.Location = new System.Drawing.Point(330, 273);
             this.btnRoutAdd.Margin = new System.Windows.Forms.Padding(5, 5, 5, 0);
@@ -203,7 +202,7 @@
             this.btnAreaAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnAreaAdd.FlatAppearance.BorderSize = 0;
             this.btnAreaAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAreaAdd.Font = new System.Drawing.Font("Bauhaus 93", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAreaAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAreaAdd.ForeColor = System.Drawing.Color.White;
             this.btnAreaAdd.Location = new System.Drawing.Point(330, 247);
             this.btnAreaAdd.Name = "btnAreaAdd";
@@ -219,7 +218,7 @@
             this.btnPricingLevelAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnPricingLevelAdd.FlatAppearance.BorderSize = 0;
             this.btnPricingLevelAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPricingLevelAdd.Font = new System.Drawing.Font("Bauhaus 93", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPricingLevelAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPricingLevelAdd.ForeColor = System.Drawing.Color.White;
             this.btnPricingLevelAdd.Location = new System.Drawing.Point(736, 138);
             this.btnPricingLevelAdd.Margin = new System.Windows.Forms.Padding(5, 5, 5, 0);
@@ -311,9 +310,9 @@
             this.lblTin.Location = new System.Drawing.Point(426, 194);
             this.lblTin.Margin = new System.Windows.Forms.Padding(5, 5, 5, 0);
             this.lblTin.Name = "lblTin";
-            this.lblTin.Size = new System.Drawing.Size(25, 13);
+            this.lblTin.Size = new System.Drawing.Size(40, 13);
             this.lblTin.TabIndex = 328;
-            this.lblTin.Text = "TIN";
+            this.lblTin.Text = "GSTIN";
             // 
             // txtCreditPeriod
             // 
@@ -930,7 +929,6 @@
             this.Controls.Add(this.groupBox1);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "frmCustomer";

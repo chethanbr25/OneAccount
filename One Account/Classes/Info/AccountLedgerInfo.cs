@@ -36,7 +36,8 @@ class AccountLedgerInfo
     private decimal _creditLimit;
     private decimal _pricinglevelId;    
     private bool _billByBill;    
-    private string _tin;    
+    private string _tin;
+    private string _gstin;
     private string _cst;    
     private string _pan;    
     private decimal _routeId;    
@@ -133,7 +134,12 @@ class AccountLedgerInfo
     {    
         get { return _tin; }    
         set { _tin = value; }    
-    }    
+    }
+    public string GSTin
+    {
+        get { return _gstin; }
+        set { _gstin = value; }
+    }   
     public string Cst    
     {    
         get { return _cst; }    

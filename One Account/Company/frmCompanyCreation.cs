@@ -75,6 +75,7 @@ namespace One_Account
                 infoCompany.FinancialYearFrom = Convert.ToDateTime(txtFinancialYearFrom.Text.Trim().ToString());
                 infoCompany.BooksBeginingFrom = Convert.ToDateTime(txtBooksBegining.Text.Trim().ToString());
                 infoCompany.Tin = txtTinNo.Text.Trim();
+                infoCompany.GSTin = txtGSTinNo.Text.Trim();
                 infoCompany.Cst = txtCstNo.Text.Trim();
                 infoCompany.Pan = txtPanNo.Text.Trim();
                 infoCompany.CurrentDate = DateTime.Now;
@@ -184,6 +185,7 @@ namespace One_Account
                 infoCompany.FinancialYearFrom = Convert.ToDateTime(txtFinancialYearFrom.Text.Trim().ToString());
                 infoCompany.BooksBeginingFrom = Convert.ToDateTime(txtBooksBegining.Text.Trim().ToString());
                 infoCompany.Tin = txtTinNo.Text.Trim();
+                infoCompany.GSTin = txtGSTinNo.Text.Trim();
                 infoCompany.Cst = txtCstNo.Text.Trim();
                 infoCompany.Pan = txtPanNo.Text.Trim();
                 infoCompany.CurrentDate = DateTime.Now;
@@ -410,6 +412,7 @@ namespace One_Account
                     txtRetypePassword.Clear();
                     txtState.Clear();
                     txtTinNo.Clear();
+                    txtGSTinNo.Clear();
                     txtWeb.Clear();
                     btnDelete.Enabled = false;
                     cmbCurrency.SelectedIndex = -1;
@@ -464,6 +467,7 @@ namespace One_Account
                 txtBooksBegining.Text = infoCompany.BooksBeginingFrom.ToString("dd-MMM-yyyy");
                 dtpBooksBegining.Text = infoCompany.BooksBeginingFrom.ToString();
                 txtTinNo.Text = infoCompany.Tin;
+                txtGSTinNo.Text = infoCompany.GSTin;
                 txtCstNo.Text = infoCompany.Cst;
                 txtPanNo.Text = infoCompany.Pan;
                 logo = (byte[])infoCompany.Logo;
